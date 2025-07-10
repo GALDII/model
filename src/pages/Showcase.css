@@ -1,0 +1,122 @@
+.showcase-container {
+  padding: 40px 20px;
+  background-color: #f8fafc;
+  min-height: 100vh;
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #4f46e5;
+}
+
+/* 🔙 Back to Home Button */
+.btn-home {
+  display: inline-block;
+  background-color: #7c3aed;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-home:hover {
+  background-color: #5b21b6;
+  transform: translateY(-2px);
+}
+
+.model-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.model-card {
+  flex: 1 1 calc(25% - 24px);
+  max-width: 250px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.model-card:hover {
+  transform: translateY(-6px);
+}
+
+.model-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.model-details {
+  padding: 16px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+.model-details h5 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+}
+
+.model-details p {
+  margin: 3px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.location {
+  font-style: italic;
+  color: #888;
+}
+
+.btn-view {
+  margin-top: 12px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background-color: #4f46e5;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-view:hover {
+  background-color: #3730a3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .model-card {
+    flex: 1 1 calc(33.333% - 24px);
+  }
+}
+
+@media (max-width: 768px) {
+  .model-card {
+    flex: 1 1 calc(50% - 24px);
+  }
+}
+
+@media (max-width: 480px) {
+  .model-card {
+    flex: 1 1 100%;
+  }
+}

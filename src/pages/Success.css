@@ -1,0 +1,90 @@
+/* Success.css */
+
+.success-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  min-height: 100vh;
+  background: linear-gradient(to right, #e0f7fa, #f1f5f9);
+}
+
+.success-card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+  padding: 50px 30px;
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.success-icon {
+  font-size: 4rem;
+  color: #198754;
+  margin-bottom: 25px;
+}
+
+.success-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+.success-message {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.success-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.success-buttons a {
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.success-buttons .btn-home {
+  background: transparent;
+  border: 2px solid #0d6efd;
+  color: #0d6efd;
+}
+
+.success-buttons .btn-home:hover {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.success-buttons .btn-view {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+}
+
+.success-buttons .btn-view:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(13, 110, 253, 0.2);
+}
+
+/* Simple fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
